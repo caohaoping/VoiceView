@@ -13,18 +13,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final FloatView floatView = findViewById(R.id.boll);
+        final VoiceView voiceView = findViewById(R.id.boll);
         View reset = findViewById(R.id.reset);
-        floatView.setOnClickListener(new View.OnClickListener() {
+        voiceView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                floatView.switchFloat();
+                voiceView.switchFloat();
             }
         });
         reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                floatView.startListening();
+                voiceView.startListening();
             }
         });
     }

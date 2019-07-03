@@ -28,7 +28,7 @@ import java.util.List;
  * Created by hp on 2019/7/2.
  * TODO
  */
-public class FloatView extends View {
+public class VoiceView extends View {
 
     private static final String TAG = MainActivity.class.getSimpleName();
     private static final int POINT_COUNTS = 3;
@@ -59,22 +59,22 @@ public class FloatView extends View {
     private Path eatPath;
     private RectF eyesRectF;
 
-    public FloatView(Context context) {
+    public VoiceView(Context context) {
         this(context, null);
     }
 
-    public FloatView(Context context, AttributeSet attrs) {
+    public VoiceView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public FloatView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public VoiceView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(context, attrs);
     }
 
     private void init(Context context, AttributeSet attrs) {
-        TypedArray array = context.obtainStyledAttributes(attrs, R.styleable.FloatView);
-        color = array.getColor(R.styleable.FloatView_color, Color.MAGENTA);
+        TypedArray array = context.obtainStyledAttributes(attrs, R.styleable.VoiceView);
+        color = array.getColor(R.styleable.VoiceView_color, Color.MAGENTA);
         array.recycle();
 
         containerPaint = new Paint();

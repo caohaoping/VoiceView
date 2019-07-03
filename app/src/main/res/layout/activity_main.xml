@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.peedeep.aniview.FloatView
+    <com.peedeep.aniview.VoiceView
         android:id="@+id/boll"
         android:layout_width="150dp"
         android:layout_height="50dp"
